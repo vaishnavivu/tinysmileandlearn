@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tiny Smiles & Learn — joyful songs, stories, animation and learning for little minds."
+    />
+    <title>Tiny Smiles & Learn | Where Learning Becomes Play</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+            :root{--blue:#0b6fea;--royal:#155bdb;--sky:#61d9ff;--yellow:#ffd233;--orange:#f5a623;--ink:#2d3a5a;--pale:#f8fcff;--line:#dcecff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:Poppins,Arial,sans-serif;overflow-x:hidden}h1,h2,h3,.brand,.btn{font-family:'Baloo 2',cursive;margin:0;line-height:1.04}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:7px 13px;background:#eaf8ff;color:var(--blue);font-weight:700;font-size:.76rem}.eyebrow:before{content:'✦';font-size:1rem}.section{padding:105px 0}.section-head{max-width:630px;margin:0 auto 46px;text-align:center}.section-head h2{font-size:clamp(2.25rem,4vw,3.5rem);margin:13px 0}.section-head p{color:#65728d;line-height:1.75}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:15px;padding:13px 21px;font-size:1rem;cursor:pointer;transition:.25s}.btn.primary{background:var(--blue);color:#fff;box-shadow:0 10px 22px #0b6fea40}.btn.primary:hover{transform:translateY(-3px);box-shadow:0 14px 26px #0b6fea54}.btn.sun{background:var(--yellow);color:var(--ink);box-shadow:0 9px 20px #f5a6233b}.btn.ghost{background:#fff;color:var(--blue);border:1px solid #d9eaff}.btn.small{padding:10px 15px;border-radius:12px;font-size:.92rem}header{position:sticky;top:0;z-index:20;background:#ffffffdb;backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.2s}header.scrolled{box-shadow:0 8px 26px #23456b12;border-color:#edf3fa}.nav{height:79px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--royal);font-size:1.3rem;white-space:nowrap}.logo-mark{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--blue),#7fddff);display:grid;place-items:center;color:#fff;font-size:1.6rem;box-shadow:0 6px 13px #0b6fea38}.navlinks{display:flex;align-items:center;gap:22px;font-size:.83rem;font-weight:600;color:#52617d}.navlinks a:hover{color:var(--blue)}.nav-actions{display:flex;gap:9px}.hamburger{display:none;border:0;background:none;font-size:1.5rem;color:var(--blue)}.hero{position:relative;padding:84px 0 55px;background:linear-gradient(180deg,#f7fcff 0%,#fff 83%);isolation:isolate}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:48px}.hero h1{font-size:clamp(3.1rem,6vw,5.2rem);letter-spacing:-1.5px;margin:17px 0;color:var(--ink)}.hero h1 em{color:var(--blue);font-style:normal}.hero p{line-height:1.8;color:#64718d;max-width:550px;font-size:1.03rem}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.trust{display:flex;align-items:center;gap:12px;margin-top:32px;font-size:.78rem;font-weight:600;color:#60708b}.faces{display:flex}.faces span{width:27px;height:27px;display:grid;place-items:center;background:#fff;border:2px solid #fff;border-radius:50%;margin-left:-7px;font-size:.9rem;box-shadow:0 2px 7px #4b76a127}.faces span:first-child{margin:0}.hero-art{min-height:460px;position:relative;display:grid;place-items:center}.rainbow{width:390px;height:230px;border-radius:400px 400px 30px 30px;background:conic-gradient(from 270deg at 50% 100%,#7ddcfb, #7ddcfb 17%,#ffcf39 17%,#ffcf39 34%,#f59645 34%,#f59645 51%,#7b91ed 51%,#7b91ed 68%,transparent 68%);mask:radial-gradient(ellipse 59% 82% at 50% 100%,transparent 56%,#000 57%);opacity:.92;transform:rotate(1deg);position:absolute;bottom:21px}.scene{width:355px;height:312px;position:relative;z-index:1;background:#dff7ff;border:9px solid #fff;border-radius:46% 46% 38% 38%;box-shadow:0 22px 42px #2965a52e;overflow:hidden}.hill{position:absolute;width:280px;height:105px;background:#a9df80;border-radius:50% 50% 0 0;bottom:-23px;left:-35px}.hill.two{left:160px;background:#8bce78;bottom:-34px}.kid{position:absolute;bottom:55px;width:94px;height:157px}.kid .head{position:absolute;width:68px;height:68px;border-radius:48% 48% 45% 45%;background:#d88b61;left:14px;top:0;border:5px solid #573d48}.kid .hair{position:absolute;top:-1px;left:12px;width:74px;height:39px;background:#463b4c;border-radius:45px 45px 8px 8px;z-index:1}.kid .body{position:absolute;top:67px;left:13px;width:70px;height:79px;background:#ffcf38;border-radius:22px 22px 12px 12px;border:5px solid #573d48}.kid .eye{position:absolute;z-index:2;top:33px;width:7px;height:9px;border-radius:50%;background:#3e3444}.kid .eye.e1{left:31px}.kid .eye.e2{left:54px}.kid .smile{position:absolute;z-index:2;top:46px;left:39px;width:17px;height:9px;border-bottom:3px solid #3e3444;border-radius:50%}.kid.a{left:55px}.kid.b{right:41px;transform:scale(.9)}.kid.b .head{background:#9f603f}.kid.b .body{background:#537be2}.kid.b .hair{height:26px;border-radius:40px;background:#3d303d}.float{position:absolute;z-index:2;animation:float 4.5s ease-in-out infinite}.cloud{color:#fff;font-size:3.6rem;text-shadow:0 8px 13px #78b2cf2e}.cloud.one{top:14px;left:7px}.cloud.two{right:-8px;bottom:80px;font-size:3rem;animation-delay:1s}.star{font-size:1.8rem;color:var(--yellow)}.star.one{top:42px;right:29px}.star.two{bottom:29px;left:13px;color:#ff9d58;animation-delay:1.4s}.bubble{height:25px;width:25px;border-radius:50%;border:4px solid #a4e9ff;top:144px;right:-4px}.doodle{position:absolute;color:#a6dcf6;opacity:.45;font:800 2rem 'Baloo 2';z-index:-1}.d1{left:5%;top:95px}.d2{right:6%;top:290px}.d3{left:4%;bottom:60px}.pillars{padding:0 0 20px}.pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.pillar{border-radius:25px;padding:25px 21px;min-height:212px;position:relative;overflow:hidden;transition:.25s}.pillar:hover{transform:translateY(-7px);box-shadow:0 18px 30px #315b9d20}.pillar .icon{font-size:2.5rem}.pillar h3{font-size:1.38rem;margin:14px 0 5px}.pillar p{font-size:.76rem;margin:0;line-height:1.5;color:#53617b}.pillar a{position:absolute;bottom:18px;font-weight:700;font-size:.82rem}.p1{background:#e4f7ff}.p2{background:#fff5d5}.p3{background:#f2ebff}.p4{background:#e7f8e3}.channels{background:#f8fcff}.channel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}.channel{background:#fff;border:1px solid #e2eef7;border-radius:24px;padding:10px;box-shadow:0 12px 30px #26588d0d;transition:.25s}.channel:hover{transform:translateY(-7px);box-shadow:0 20px 38px #26588d1c}.thumb{height:165px;display:grid;place-items:center;border-radius:17px;font-size:4.5rem;position:relative;overflow:hidden}.thumb:after{content:'▶';position:absolute;width:44px;height:44px;border-radius:50%;background:#ffffffdc;display:grid;place-items:center;font-size:1rem;color:#f14646}.t1{background:linear-gradient(135deg,#ffc834,#ff9667)}.t2{background:linear-gradient(135deg,#6bdcff,#507cec)}.t3{background:linear-gradient(135deg,#d6a9ff,#ed8db6)}.channel-info{padding:17px 10px 10px}.channel h3{font-size:1.31rem}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 16px}.tags span{font-size:.68rem;padding:5px 8px;border-radius:20px;background:#f1f7ff;color:#57719b;font-weight:600}.studio{background:linear-gradient(126deg,#155bdb,#0c88e9 60%,#5ad5ff);color:white;overflow:hidden;position:relative}.studio .section-head p{color:#d9edff}.studio .eyebrow{background:#ffffff26;color:#fff}.studio-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.service{background:#ffffff18;backdrop-filter:blur(8px);border:1px solid #ffffff28;border-radius:17px;padding:15px;font-size:.86rem;font-weight:600}.service b{font-size:1.3rem;display:block;margin-bottom:4px}.studio-art{min-height:300px;position:relative;display:grid;place-items:center}.screen{background:white;color:var(--ink);width:310px;height:205px;border-radius:22px;padding:20px;box-shadow:0 25px 42px #003d8d40;transform:rotate(3deg)}.screen .mini{height:115px;border-radius:12px;background:linear-gradient(135deg,#ffe05c,#fe9c6b);display:grid;place-items:center;font-size:3.6rem}.screen p{margin:12px 0 0;font:700 1rem 'Baloo 2'}.orbit{position:absolute;border:2px dashed #ffffff6b;border-radius:50%;width:390px;height:390px}.shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{border:1px solid #e3edf7;border-radius:20px;overflow:hidden;background:#fff;transition:.25s}.product:hover{transform:translateY(-5px);box-shadow:0 17px 32px #1c5c9d18}.product-image{height:135px;display:grid;place-items:center;font-size:3.9rem}.product:nth-child(1) .product-image{background:#fff0dd}.product:nth-child(2) .product-image{background:#e8f7ff}.product:nth-child(3) .product-image{background:#f4eaff}.product:nth-child(4) .product-image{background:#e8f7df}.product-info{padding:15px}.product h3{font-size:1.12rem}.product p{font-size:.72rem;line-height:1.55;color:#66748e;min-height:34px}.price{font-weight:700;color:var(--blue);font-size:.92rem}.courses{background:#fffaf0}.course-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:26px}.course-tabs button{border:0;padding:10px 18px;border-radius:12px;font:700 1rem 'Baloo 2';background:#fff;color:#6b7790;cursor:pointer}.course-tabs button.active{background:var(--blue);color:white}.course-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.course{border-radius:20px;background:#fff;padding:18px;border:1px solid #eee9dd}.course-icon{font-size:2.2rem}.course h3{font-size:1.19rem;margin:12px 0 7px}.course p{font-size:.72rem;color:#68748b;line-height:1.5}.meta{font-size:.68rem;font-weight:700;color:#f09525;margin:13px 0}.cta{padding:80px 0}.cta-box{border-radius:30px;padding:59px 7%;text-align:center;color:#fff;background:linear-gradient(120deg,#155bdb,#0b6fea,#53cef8);position:relative;overflow:hidden}.cta-box:before,.cta-box:after{content:'✦';position:absolute;color:#ffffff25;font-size:10rem;line-height:1}.cta-box:before{left:5%;top:-20px}.cta-box:after{right:6%;bottom:-40px}.cta h2{font-size:clamp(2.2rem,4vw,3.5rem);position:relative}.cta p{max-width:600px;margin:15px auto 25px;color:#e6f5ff;position:relative}.cta .btn{position:relative}footer{background:#162b54;color:#c9d8f4;padding:60px 0 26px}.footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:37px}.footer-grid .brand{color:#fff}.footer-grid p{font-size:.78rem;line-height:1.7;max-width:270px}.footer-grid h4{font:700 1.15rem 'Baloo 2';color:#fff;margin:0 0 15px}.footer-grid a{display:block;font-size:.76rem;margin:9px 0;color:#c9d8f4}.footer-grid a:hover{color:#fff}.copyright{border-top:1px solid #ffffff1c;margin-top:42px;padding-top:20px;font-size:.73rem;display:flex;justify-content:space-between}.wa-float{position:fixed;right:22px;bottom:21px;width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:#26d366;color:#fff;font-size:1.6rem;box-shadow:0 9px 24px #07983b52;z-index:10}@keyframes float{50%{transform:translateY(-12px)}}@media(max-width:900px){.navlinks{display:none}.hamburger{display:block}.nav-actions .ghost{display:none}.hero-grid,.studio-grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-inline:auto}.hero-buttons,.trust{justify-content:center}.hero-art{min-height:390px}.pillar-grid,.shop-grid,.course-grid{grid-template-columns:repeat(2,1fr)}.channel-grid{grid-template-columns:1fr}.channel{display:grid;grid-template-columns:200px 1fr;align-items:center}.thumb{height:145px}.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.nav{height:68px}.brand{font-size:1.1rem}.logo-mark{width:38px;height:38px}.nav-actions .primary{display:none}.section{padding:70px 0}.hero{padding-top:55px}.hero-art{min-height:325px}.scene{transform:scale(.82)}.rainbow{transform:scale(.78)}.pillar-grid,.shop-grid,.course-grid{grid-template-columns:1fr}.pillar{min-height:180px}.channel{display:block}.thumb{height:165px}.service-list{grid-template-columns:1fr}.studio-art{display:none}.footer-grid{grid-template-columns:1fr 1fr;gap:25px}.footer-grid>div:first-child{grid-column:1/-1}.copyright{display:block;line-height:2}.hero h1{letter-spacing:-.8px}}
+            /* Playful pointer system: enabled only for mouse/trackpad devices. */
+            @media (pointer:fine){body,body *{cursor:none!important}.magic-cursor{position:fixed;z-index:9999;left:0;top:0;width:82px;height:82px;pointer-events:none;will-change:transform;overflow:visible}.magic-cursor .wand-svg{width:82px;height:82px;overflow:visible;transform-origin:12px 0;filter:drop-shadow(0 4px 7px #0b6fea58);transition:filter .2s}.magic-cursor .star-group{transform-origin:12px 0;transition:filter .2s}.magic-cursor.is-active .wand-svg{filter:drop-shadow(0 0 11px #ffd233) drop-shadow(0 0 18px #61d9ff);animation:wand-wave .75s ease-in-out infinite alternate}.magic-cursor.is-active .star-group{filter:drop-shadow(0 0 7px #fff49a);animation:star-pulse .72s ease-in-out infinite alternate}.magic-cursor.is-flick .wand-svg{animation:wand-tap .28s ease-out}.cursor-particle,.spell-burst{position:fixed;z-index:9998;pointer-events:none;will-change:transform,opacity}.cursor-particle{font-size:12px;animation:cursor-pop .75s ease-out forwards}.spell-burst{font-size:15px;animation:spell-burst .7s cubic-bezier(.1,.8,.3,1) forwards}.spell-dot{position:fixed;z-index:9998;width:9px;height:9px;border-radius:50%;pointer-events:none;background:var(--c);box-shadow:0 0 12px var(--c);animation:spell-burst .62s ease-out forwards}.spell-ring{position:fixed;z-index:9997;width:12px;height:12px;border:3px solid #fff1a1;border-radius:50%;pointer-events:none;box-shadow:0 0 16px #61d9ff, inset 0 0 12px #ffd233;animation:spell-ring .62s ease-out forwards}@keyframes cursor-pop{to{transform:translate(var(--x),var(--y)) scale(.2) rotate(100deg);opacity:0}}@keyframes star-pulse{to{transform:scale(1.25)}}@keyframes wand-wave{to{transform:rotate(-20deg)}}@keyframes wand-tap{40%{transform:rotate(8deg) translate(3px,7px)}100%{transform:rotate(0)}}@keyframes spell-burst{to{transform:translate(var(--x),var(--y)) scale(.25) rotate(180deg);opacity:0}}@keyframes spell-ring{to{transform:translate(-50%,-50%) scale(9);opacity:0}}.btn{position:relative;overflow:visible}.btn:after{content:'✨  •  🎵';position:absolute;white-space:nowrap;left:18%;top:-14px;font-size:.72rem;opacity:0;pointer-events:none}.btn:hover{animation:jelly .48s ease}.btn:hover:after{animation:button-sparkle .78s ease-out}.pillar,.channel,.product,.course{transform-style:preserve-3d;will-change:transform}.pillar:before,.channel:before,.product:before,.course:before{content:'';position:absolute;inset:-2px;border-radius:inherit;z-index:-1;opacity:0;background:linear-gradient(110deg,#61d9ff,#ffd233,#f596d8,#61d9ff);background-size:240% 100%;transition:opacity .22s}.pillar:hover:before,.channel:hover:before,.product:hover:before,.course:hover:before{opacity:.75;animation:rainbow 2.6s linear infinite}.pillar .icon,.product-image,.course-icon,.thumb{transition:transform .3s cubic-bezier(.2,1.4,.4,1)}.pillar:hover .icon,.course:hover .course-icon,.channel:hover .thumb{transform:translateY(-6px) rotate(7deg) scale(1.1)}.product:hover .product-image{transform:translateY(-8px) rotate(5deg) scale(1.12)}@keyframes jelly{0%,100%{transform:scale(1)}30%{transform:scale(1.08,.91)}55%{transform:scale(.96,1.05)}75%{transform:scale(1.03,.98)}}@keyframes button-sparkle{0%{opacity:0;transform:translateY(5px) scale(.6)}35%{opacity:1}100%{opacity:0;transform:translateY(-19px) scale(1.15)}}@keyframes rainbow{to{background-position:240% 0}}
+            @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.magic-cursor,.cursor-particle{display:none!important}}
+            .channel-actions{display:flex;gap:9px;flex-wrap:wrap}.insta-follow{margin-top:13px;background:linear-gradient(110deg,#7b44d5,#e54c78,#f7a339)!important;color:#fff!important}@media (pointer:fine){.magic-cursor{height:94px}.magic-cursor .wand-svg{height:94px}}
+
+         .brand{
+          display:flex;
+          align-items:center;
+          flex-shrink:0;
+      }
+
+      .brand-logo{
+          width:100%;
+          max-width:260px;
+          height:auto;
+          display:block;
+          object-fit:contain;
+          transition:all .3s ease;
+      }
+
+      @media (min-width:1200px){
+          .brand-logo{
+              max-width:260px;
+          }
+      }
+      @media (max-width:1199px){
+          .brand-logo{
+              max-width:220px;
+          }
+      }@media (max-width:992px){
+          .brand-logo{
+              max-width:180px;
+          }
+      }@media (max-width:768px){
+          .brand-logo{
+              max-width:150px;
+          }
+      }@media (max-width:480px){
+          .brand-logo{
+              max-width:120px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="nav wrap">
+        <a href="#home" class="brand">
+          <img
+            src="./tiny-smiles-logo.png"
+            alt="Tiny Smiles & Learn Logo"
+            class="brand-logo"
+          />
+        </a>
+        <div class="navlinks">
+          <a href="#home">Home</a><a href="#channels">YouTube Channels</a
+          ><a href="#studio">Animation Studio</a><a href="#shop">Shop</a
+          ><a href="#courses">Learning Courses</a><a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a class="btn ghost small" href="mailto:tinysmilesandlearn@gmail.com"
+            >Subscribe</a
+          ><a class="btn primary small wa" href="#contact">◉ WhatsApp</a>
+        </div>
+        <button class="hamburger" aria-label="Open menu">☰</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <span class="doodle d1">A B C</span><span class="doodle d2">1 2 3</span
+        ><span class="doodle d3">♫</span>
+        <div class="wrap hero-grid">
+          <div>
+            <span class="eyebrow">Little smiles, big dreams</span>
+            <h1>Where Learning<br />Becomes <em>Play!</em></h1>
+            <p>
+              Educational songs, animated stories, personalized videos, learning
+              courses and fun products for every curious little mind.
+            </p>
+            <div class="hero-buttons">
+              <a href="#channels" class="btn primary">▶ Watch Videos</a
+              ><a href="#studio" class="btn sun">✦ Create Animation</a>
+            </div>
+            <div class="trust">
+              <div class="faces">
+                <span>👧</span><span>👦</span><span>🧒</span>
+              </div>
+              <span>Made with joy for growing imaginations</span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <span class="float cloud one">☁</span
+            ><span class="float cloud two">☁</span
+            ><span class="float star one">✦</span
+            ><span class="float star two">✦</span
+            ><span class="float bubble"></span>
+            <div class="rainbow"></div>
+            <div class="scene">
+              <div class="hill"></div>
+              <div class="hill two"></div>
+              <div class="kid a">
+                <i class="hair"></i><i class="head"></i><i class="eye e1"></i
+                ><i class="eye e2"></i><i class="smile"></i><i class="body"></i>
+              </div>
+              <div class="kid b">
+                <i class="hair"></i><i class="head"></i><i class="eye e1"></i
+                ><i class="eye e2"></i><i class="smile"></i><i class="body"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pillars">
+        <div class="wrap pillar-grid">
+          <article class="pillar p1">
+            <div class="icon">📺</div>
+            <h3>Watch &amp; Smile</h3>
+            <p>Rhymes, stories and happy learning time.</p>
+            <a href="#channels">Explore channels →</a>
+          </article>
+          <article class="pillar p2">
+            <div class="icon">🎬</div>
+            <h3>Made Just for You</h3>
+            <p>Magical custom animations for every moment.</p>
+            <a href="#studio">Create a video →</a>
+          </article>
+          <article class="pillar p3">
+            <div class="icon">🧸</div>
+            <h3>Playful Finds</h3>
+            <p>Thoughtful products for little learners.</p>
+            <a href="#shop">Visit the shop →</a>
+          </article>
+          <article class="pillar p4">
+            <div class="icon">🎨</div>
+            <h3>Learn &amp; Grow</h3>
+            <p>Creative courses made for growing minds.</p>
+            <a href="#courses">Browse courses →</a>
+          </article>
+        </div>
+      </section>
+      <section class="channels section" id="channels">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Our happy channels</span>
+            <h2>Watch • Learn • Smile</h2>
+            <p>
+              Stories, songs and lessons crafted to make every screen moment
+              meaningful.
+            </p>
+            <a
+              class="btn small insta-follow"
+              href="https://www.instagram.com/tinysmilesandlearn?igsh=MXM0OGU1aWk2Mzl5bg=="
+              target="_blank"
+              rel="noopener"
+              >◎ Follow us on Instagram</a
+            >
+          </div>
+          <div class="channel-grid">
+            <article class="channel">
+              <div class="thumb t1">🐘</div>
+              <div class="channel-info">
+                <h3>Marathi Toons</h3>
+                <div class="tags">
+                  <span>Marathi Rhymes</span><span>Stories</span
+                  ><span>Festivals</span>
+                </div>
+                <div class="channel-actions">
+                  <a
+                    class="btn primary small"
+                    href="https://youtube.com/@tinysmileslearnmarathitoons?si=2uHJMlhOIRP8-d6l"
+                    target="_blank"
+                    rel="noopener"
+                    >▶ Subscribe</a
+                  ><a
+                    class="btn ghost small"
+                    href="https://youtube.com/@tinysmileslearnmarathitoons?si=2uHJMlhOIRP8-d6l"
+                    target="_blank"
+                    rel="noopener"
+                    >Visit ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="channel">
+              <div class="thumb t2">🦁</div>
+              <div class="channel-info">
+                <h3>Tiny Smiles &amp; Learn</h3>
+                <div class="tags">
+                  <span>ABC</span><span>Phonics</span
+                  ><span>Learning Songs</span>
+                </div>
+                <div class="channel-actions">
+                  <a
+                    class="btn primary small"
+                    href="https://youtube.com/@tinysmilesandlearn?si=7uWZ2NPAFuIXUfl9"
+                    target="_blank"
+                    rel="noopener"
+                    >▶ Subscribe</a
+                  ><a
+                    class="btn ghost small"
+                    href="https://youtube.com/@tinysmilesandlearn?si=7uWZ2NPAFuIXUfl9"
+                    target="_blank"
+                    rel="noopener"
+                    >Visit ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="channel">
+              <div class="thumb t3">🦄</div>
+              <div class="channel-info">
+                <h3>Stories for Kids</h3>
+                <div class="tags">
+                  <span>Moral Stories</span><span>Adventure</span
+                  ><span>Bedtime</span>
+                </div>
+                <div class="channel-actions">
+                  <a
+                    class="btn primary small"
+                    href="https://youtube.com/@tinysmilesstoriesforkids?si=Aol0_fdAWYjfMuhn"
+                    target="_blank"
+                    rel="noopener"
+                    >▶ Subscribe</a
+                  ><a
+                    class="btn ghost small"
+                    href="https://youtube.com/@tinysmilesstoriesforkids?si=Aol0_fdAWYjfMuhn"
+                    target="_blank"
+                    rel="noopener"
+                    >Visit ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="studio section" id="studio">
+        <div class="wrap studio-grid">
+          <div>
+            <span class="eyebrow">Tiny Smiles Studio</span>
+            <h2 style="font-size: clamp(2.3rem, 4vw, 3.7rem); margin: 15px 0">
+              Your child.<br />Our imagination.
+            </h2>
+            <p style="line-height: 1.75; color: #d9edff; margin-bottom: 24px">
+              Turn birthdays, milestones and brilliant ideas into colorful
+              keepsakes your family will treasure.
+            </p>
+            <div class="service-list">
+              <div class="service"><b>🎂</b>Birthday Songs</div>
+              <div class="service"><b>🌟</b>Milestone Videos</div>
+              <div class="service"><b>🎵</b>Custom Rhymes</div>
+              <div class="service"><b>🏫</b>School &amp; Festival Films</div>
+            </div>
+            <a class="btn sun" style="margin-top: 24px" href="#contact"
+              >Create Your Custom Animation →</a
+            >
+          </div>
+          <div class="studio-art">
+            <div class="orbit"></div>
+            <div class="screen">
+              <div class="mini">🎈 🧒 🎉</div>
+              <p>A film starring your little star!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="shop">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Little things, big joy</span>
+            <h2>A shop full of smiles</h2>
+            <p>
+              Thoughtful, colorful finds selected for play, discovery and
+              everyday adventures.
+            </p>
+          </div>
+          <div class="shop-grid">
+            <article class="product">
+              <div class="product-image">👕</div>
+              <div class="product-info">
+                <h3>Happy T-Shirt</h3>
+                <p>Soft cotton, all-day play comfort.</p>
+                <div class="price">₹499</div>
+                <a
+                  class="btn small primary wa"
+                  data-item="Happy T-Shirt"
+                  style="margin-top: 12px"
+                  >Order on WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product">
+              <div class="product-image">🧸</div>
+              <div class="product-info">
+                <h3>Storytime Bear</h3>
+                <p>A cuddly friend for calm moments.</p>
+                <div class="price">₹699</div>
+                <a
+                  class="btn small primary wa"
+                  data-item="Storytime Bear"
+                  style="margin-top: 12px"
+                  >Order on WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product">
+              <div class="product-image">🧩</div>
+              <div class="product-info">
+                <h3>Rainbow Puzzle</h3>
+                <p>Bright pieces for clever little hands.</p>
+                <div class="price">₹549</div>
+                <a
+                  class="btn small primary wa"
+                  data-item="Rainbow Puzzle"
+                  style="margin-top: 12px"
+                  >Order on WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product">
+              <div class="product-image">📚</div>
+              <div class="product-info">
+                <h3>First Story Book</h3>
+                <p>Sweet stories for curious readers.</p>
+                <div class="price">₹399</div>
+                <a
+                  class="btn small primary wa"
+                  data-item="First Story Book"
+                  style="margin-top: 12px"
+                  >Order on WhatsApp</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="courses section" id="courses">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Every day is a new adventure</span>
+            <h2>Learning made lovely</h2>
+            <p>
+              Gentle, engaging courses that help children—and their
+              grown-ups—grow with confidence.
+            </p>
+          </div>
+          <div class="course-tabs">
+            <button class="active" data-set="kids">For Kids</button
+            ><button data-set="parents">For Parents</button>
+          </div>
+          <div class="course-grid" id="courseGrid"></div>
+        </div>
+      </section>
+      <section class="cta" id="contact">
+        <div class="wrap">
+          <div class="cta-box">
+            <h2>Let’s make something wonderful.</h2>
+            <p>
+              Have a question, a bright idea, or a special occasion on the way?
+              We’d love to hear from you.
+            </p>
+            <a class="btn sun wa">Say Hello on WhatsApp →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="#home"
+              ><span class="logo-mark">☻</span
+              ><span>Tiny Smiles<br />&amp; Learn</span></a
+            >
+            <p>
+              Making little moments brighter through stories, songs, play and
+              learning.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <a href="#channels">YouTube Channels</a
+            ><a href="#studio">Animation Studio</a><a href="#shop">Shop</a
+            ><a href="#courses">Learning Courses</a>
+          </div>
+          <div>
+            <h4>Say hello</h4>
+            <a href="tel:+919762747757">Call: 9762747757</a
+            ><a class="wa" href="#contact">WhatsApp: 9762747757</a
+            ><a href="mailto:tinysmilesandlearn@gmail.com"
+              >tinysmilesandlearn@gmail.com</a
+            ><a
+              href="https://maps.google.com/?q=Hadapsar+Pune+411028"
+              target="_blank"
+              rel="noopener"
+              >Hadapsar, Pune 411028</a
+            >
+          </div>
+          <div>
+            <h4>Follow along</h4>
+            <a
+              href="https://youtube.com/@tinysmilesandlearn?si=7uWZ2NPAFuIXUfl9"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            ><a
+              href="https://www.instagram.com/tinysmilesandlearn?igsh=MXM0OGU1aWk2Mzl5bg=="
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            ><a class="wa" href="#contact">WhatsApp</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© 2026 Tiny Smiles &amp; Learn. Made with love.</span
+          ><span>Privacy Policy &nbsp; • &nbsp; Terms &amp; Conditions</span>
+        </div>
+      </div>
+    </footer>
+    <a class="wa-float wa" aria-label="Chat on WhatsApp">◉</a>
+    <div class="magic-cursor" aria-hidden="true">
+      <svg class="wand-svg" viewBox="0 0 82 94">
+        <defs>
+          <clipPath id="candyStick">
+            <path d="M10 25 L14 25 L27 84 Q28 91 23 92 Q19 92 18 86Z" />
+          </clipPath>
+          <linearGradient id="goldStar" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#fff7a8" />
+            <stop offset=".45" stop-color="#FFD233" />
+            <stop offset="1" stop-color="#f7b322" />
+          </linearGradient>
+        </defs>
+        <g transform="rotate(-20 12 0)">
+          <path
+            d="M10 25 L14 25 L27 84 Q28 91 23 92 Q19 92 18 86Z"
+            fill="#F5A623"
+            stroke="#df8615"
+            stroke-width="1.35"
+          />
+          <g clip-path="url(#candyStick)">
+            <path
+              d="M5 34 L24 28 M8 48 L27 42 M11 62 L30 56 M14 76 L33 70 M17 90 L36 84"
+              stroke="#fff"
+              stroke-width="4.2"
+            />
+          </g>
+        </g>
+        <g transform="translate(12 0) scale(1.4) translate(-12 0)">
+          <g class="star-group">
+            <path
+              d="M12 0 L15.8 7.2 L23.8 8.35 L18 14.05 L19.4 22 L12 18.1 L4.6 22 L6 14.05 L.2 8.35 L8.2 7.2Z"
+              fill="url(#goldStar)"
+              stroke="#F5A623"
+              stroke-width="1.65"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.2 10.1 C8 6.1 12.8 4.3 16.4 7.1"
+              fill="none"
+              stroke="#fff8d7"
+              stroke-width="2.1"
+              stroke-linecap="round"
+              opacity=".9"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <script>
+      const WHATSAPP_NUMBER = "919762747757";
+      document.querySelectorAll(".wa").forEach((el) =>
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          const item = el.dataset.item
+            ? `Hi Tiny Smiles & Learn! I'd like to order the ${el.dataset.item}.`
+            : `Hi Tiny Smiles & Learn! I'd love to know more.`;
+          window.open(
+            `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(item)}`,
+            "_blank",
+          );
+        }),
+      );
+      addEventListener("scroll", () =>
+        document
+          .getElementById("header")
+          .classList.toggle("scrolled", scrollY > 5),
+      );
+      // Smooth, touch-safe magical cursor with a tiny sparkle trail.
+      const finePointer = matchMedia("(pointer:fine)").matches;
+      if (
+        finePointer &&
+        !matchMedia("(prefers-reduced-motion:reduce)").matches
+      ) {
+        const cursor = document.querySelector(".magic-cursor");
+        let tx = -12,
+          ty = 0,
+          cx = -12,
+          cy = 0,
+          last = 0;
+        const interactive = "a,button,.pillar,.channel,.product,.course";
+        function tick() {
+          cx += (tx - cx) * 0.22;
+          cy += (ty - cy) * 0.22;
+          cursor.style.transform = `translate3d(${cx}px,${cy}px,0) translate3d(-12px,0,0)`;
+          requestAnimationFrame(tick);
+        }
+        function particle(x, y, burst = false) {
+          const p = document.createElement("span");
+          p.className = burst ? "spell-burst" : "cursor-particle";
+          p.textContent = ["✨", "⭐", "💫", "✦"][
+            Math.floor(Math.random() * 4)
+          ];
+          p.style.left = x + "px";
+          p.style.top = y + "px";
+          p.style.setProperty(
+            "--x",
+            Math.random() * (burst ? 110 : 24) - (burst ? 55 : 12) + "px",
+          );
+          p.style.setProperty(
+            "--y",
+            Math.random() * (burst ? 110 : 24) + (burst ? 10 : 4) + "px",
+          );
+          document.body.append(p);
+          setTimeout(() => p.remove(), 800);
+        }
+        requestAnimationFrame(tick);
+        addEventListener("pointermove", (e) => {
+          tx = e.clientX;
+          ty = e.clientY;
+          const now = performance.now();
+          if (now - last > 62) {
+            last = now;
+            particle(tx, ty);
+          }
+        });
+        addEventListener("pointerdown", (e) => {
+          const x = e.clientX,
+            y = e.clientY;
+          cursor.classList.add("is-flick");
+          setTimeout(() => cursor.classList.remove("is-flick"), 300);
+          for (let i = 0; i < 10; i++) particle(x, y, true);
+          for (let i = 0; i < 4; i++) {
+            const d = document.createElement("i");
+            d.className = "spell-dot";
+            d.style.left = x + "px";
+            d.style.top = y + "px";
+            d.style.setProperty(
+              "--c",
+              ["#ffd233", "#61d9ff", "#ffa5df", "#fff"][i],
+            );
+            d.style.setProperty("--x", Math.random() * 100 - 50 + "px");
+            d.style.setProperty("--y", Math.random() * 100 - 50 + "px");
+            document.body.append(d);
+            setTimeout(() => d.remove(), 700);
+          }
+          const ring = document.createElement("i");
+          ring.className = "spell-ring";
+          ring.style.left = x + "px";
+          ring.style.top = y + "px";
+          document.body.append(ring);
+          setTimeout(() => ring.remove(), 700);
+        });
+        document.addEventListener("pointerover", (e) => {
+          if (e.target.closest(interactive)) cursor.classList.add("is-active");
+        });
+        document.addEventListener("pointerout", (e) => {
+          if (e.target.closest(interactive))
+            cursor.classList.remove("is-active");
+        });
+        document
+          .querySelectorAll(".pillar,.channel,.product,.course")
+          .forEach((card) =>
+            card.addEventListener("pointermove", (e) => {
+              const r = card.getBoundingClientRect(),
+                x = (e.clientX - r.left) / r.width - 0.5,
+                y = (e.clientY - r.top) / r.height - 0.5;
+              card.style.transform = `translateY(-10px) perspective(750px) rotateX(${-y * 5}deg) rotateY(${x * 6}deg)`;
+            }),
+          );
+        document
+          .querySelectorAll(".pillar,.channel,.product,.course")
+          .forEach((card) =>
+            card.addEventListener(
+              "pointerleave",
+              () => (card.style.transform = ""),
+            ),
+          );
+      }
+      const sets = {
+        kids: [
+          ["🔤", "ABC Adventures", "Ages 3–5 · 12 joyful lessons"],
+          ["🎨", "Little Artists", "Ages 4–8 · Draw, paint & create"],
+          ["🔢", "Math Magic", "Ages 4–7 · Numbers through play"],
+          ["🎵", "Music & Movement", "Ages 3–7 · Sing, dance & shine"],
+        ],
+        parents: [
+          ["💛", "Positive Parenting", "For parents · 6 gentle sessions"],
+          ["🧠", "Early Learning", "For parents · Build happy habits"],
+          ["🥕", "Nutrition Basics", "For parents · Mealtime made easy"],
+          ["🏡", "Play at Home", "For parents · Everyday activities"],
+        ],
+      };
+      const grid = document.getElementById("courseGrid");
+      function draw(set) {
+        grid.innerHTML = sets[set]
+          .map(
+            (x) =>
+              `<article class="course"><div class="course-icon">${x[0]}</div><h3>${x[1]}</h3><p>Fun, friendly learning designed to fit beautifully into your family’s day.</p><div class="meta">${x[2]}</div><a class="btn small primary wa" data-item="${x[1]}">Enroll via WhatsApp</a></article>`,
+          )
+          .join("");
+        grid.querySelectorAll(".wa").forEach((el) =>
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.open(
+              `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi! I’d like to enroll in ${el.dataset.item}.`)}`,
+              "_blank",
+            );
+          }),
+        );
+      }
+      draw("kids");
+      document.querySelectorAll(".course-tabs button").forEach(
+        (btn) =>
+          (btn.onclick = () => {
+            document
+              .querySelector(".course-tabs .active")
+              .classList.remove("active");
+            btn.classList.add("active");
+            draw(btn.dataset.set);
+          }),
+      );
+    </script>
+  </body>
+</html>

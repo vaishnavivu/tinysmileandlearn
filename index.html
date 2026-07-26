@@ -58,6 +58,24 @@
               max-width:120px;
           }
       }
+      /* Compact, consistent logo sizing across screen sizes. */
+      .nav .brand-logo{width:165px;max-width:none;max-height:58px}
+      .footer-brand .brand-logo{width:185px;max-width:none;filter:drop-shadow(0 4px 7px #00133355)}
+      @media (max-width:900px){
+        .nav{position:relative}
+        .navlinks.is-open{display:flex;position:absolute;top:calc(100% - 4px);left:0;right:0;z-index:25;flex-direction:column;align-items:stretch;gap:0;padding:10px 20px 18px;background:#fffffff5;border:1px solid #e3eef8;border-radius:0 0 18px 18px;box-shadow:0 16px 28px #23456b1f}
+        .navlinks.is-open a{padding:11px 4px;border-bottom:1px solid #edf3fa}
+        .navlinks.is-open a:last-child{border-bottom:0}
+      }
+      @media (max-width:480px){
+        .nav-actions{display:none}
+        .nav .brand-logo{width:110px;max-height:43px}
+        .hamburger{padding:7px;line-height:1}
+        .footer-brand .brand-logo{width:150px}
+      }
+      @media (min-width:1200px){.nav .brand-logo{width:175px}}
+      @media (min-width:769px) and (max-width:1199px){.nav .brand-logo{width:155px;max-height:54px}}
+      @media (min-width:481px) and (max-width:768px){.nav .brand-logo{width:130px;max-height:48px}}
     </style>
   </head>
   <body>
@@ -70,7 +88,7 @@
             class="brand-logo"
           />
         </a>
-        <div class="navlinks">
+        <div class="navlinks" id="primary-navigation">
           <a href="#home">Home</a><a href="#channels">YouTube Channels</a
           ><a href="#studio">Animation Studio</a><a href="#shop">Shop</a
           ><a href="#courses">Learning Courses</a><a href="#contact">Contact</a>
@@ -80,7 +98,7 @@
             >Subscribe</a
           ><a class="btn primary small wa" href="#contact">◉ WhatsApp</a>
         </div>
-        <button class="hamburger" aria-label="Open menu">☰</button>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
       </nav>
     </header>
     <main>
@@ -386,9 +404,8 @@
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <a class="brand" href="#home"
-              ><span class="logo-mark">☻</span
-              ><span>Tiny Smiles<br />&amp; Learn</span></a
+            <a class="brand footer-brand" href="#home"
+              ><img src="./tiny-smiles-logo.png" alt="Tiny Smiles &amp; Learn" class="brand-logo" /></a
             >
             <p>
               Making little moments brighter through stories, songs, play and
@@ -502,6 +519,22 @@
         document
           .getElementById("header")
           .classList.toggle("scrolled", scrollY > 5),
+      );
+      const menuButton = document.querySelector(".hamburger");
+      const navigation = document.querySelector(".navlinks");
+      menuButton.addEventListener("click", () => {
+        const open = navigation.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", String(open));
+        menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        menuButton.textContent = open ? "×" : "☰";
+      });
+      navigation.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", () => {
+          navigation.classList.remove("is-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open menu");
+          menuButton.textContent = "☰";
+        }),
       );
       // Smooth, touch-safe magical cursor with a tiny sparkle trail.
       const finePointer = matchMedia("(pointer:fine)").matches;
